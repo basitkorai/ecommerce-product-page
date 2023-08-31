@@ -11,6 +11,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Custom Features](#custom-features)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -51,13 +52,17 @@ Users should be able to:
 
 ### What I learned
 
-Whenever you're using images or any asset in your react app, be sure to import them or else your application will break in production mode.
+Whenever you're using images or any asset in your React app, be sure to import them or else your application will break in production mode.
 
 ```jsx
 import avatar from './src/assets/images/avatar.jpg'
 
 <img src={avatar} alt="avatar">
 ```
+
+### Custom Features
+
+1. Automatic Dark Mode
 
 ### Continued development
 
