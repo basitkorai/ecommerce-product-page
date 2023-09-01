@@ -48,16 +48,21 @@ const Product = () => {
               isCartOpen || isSidebarOpen ? 'btn-prev' : 'btn-prev zindex'
             }`}
             aria-label="previous image"
+            width="12"
+            height="18"
           >
             <img src={iconPrev} alt="" />
           </button>
           <img
+            className="image100"
             src={images[index]}
             alt=""
             aria-controls="lightbox"
             onClick={() => {
               setLightbox(true)
             }}
+            width="444"
+            height="444"
           />
           <button
             onClick={nextImage}
@@ -66,7 +71,7 @@ const Product = () => {
             }`}
             aria-label="next image"
           >
-            <img src={iconNext} alt="" />
+            <img src={iconNext} alt="" width="13" height="18" />
           </button>
         </div>
         <div className="">
@@ -81,7 +86,13 @@ const Product = () => {
                       setIndex(index)
                     }}
                   >
-                    <img className="thumbnail" src={thumbnail} alt="" />
+                    <img
+                      className="thumbnail image100"
+                      src={thumbnail}
+                      alt=""
+                      height="100"
+                      width="100"
+                    />
                   </button>
                 </li>
               )
@@ -114,7 +125,13 @@ const Product = () => {
               className="btn-decrease"
               aria-label="decrease quantity"
             >
-              <img src={iconMinus} alt="" />
+              <img
+                src={iconMinus}
+                alt=""
+                width="12"
+                height="4"
+                className="image100"
+              />
             </button>
             <span className="quantity">{tempState}</span>
             <button
@@ -122,7 +139,13 @@ const Product = () => {
               className="btn-increase"
               aria-label="increase quantity"
             >
-              <img src={iconPlus} alt="" />
+              <img
+                src={iconPlus}
+                alt=""
+                width="12"
+                height="12"
+                className="image100"
+              />
             </button>
           </div>
           <button

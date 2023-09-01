@@ -49,7 +49,13 @@ const Navbar = () => {
             aria-label="toggle navbar"
             ref={navToggle}
           >
-            <img src={iconHamburger} alt="" aria-hidden="true" />
+            <img
+              src={iconHamburger}
+              alt=""
+              aria-hidden="true"
+              width="16"
+              height="15"
+            />
           </button>
           <div className="header__logo-container logo">
             <a href="./index.html">
@@ -126,7 +132,14 @@ const Navbar = () => {
             </div>
           </FocusTrap>
           <button className="user-avatar" type="button" aria-label="my profile">
-            <img className="avatar" src={Avatar} alt="" aria-hidden="true" />
+            <img
+              className="avatar image100"
+              src={Avatar}
+              alt=""
+              aria-hidden="true"
+              width="38"
+              height="38"
+            />
           </button>
         </div>
       </div>
