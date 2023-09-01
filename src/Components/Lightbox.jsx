@@ -26,6 +26,7 @@ const Lightbox = () => {
         }
         id="lightbox"
         aria-describedby="lightbox__header"
+        aria-label="Product Photo Gallery"
       >
         <div className="lightbox__header sr-only" id="lightbox__header">
           Product Photo Gallery

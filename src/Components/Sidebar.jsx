@@ -30,6 +30,7 @@ const Sidebar = () => {
             onClick={() => {
               setIsSidebarOpen(false)
             }}
+            aria-label="close sidebar"
           >
             <img src={iconClose} alt="" />
           </button>
