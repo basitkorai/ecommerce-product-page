@@ -47,6 +47,7 @@ const Product = () => {
             className={`${
               isCartOpen || isSidebarOpen ? 'btn-prev' : 'btn-prev zindex'
             }`}
+            aria-label="previous image"
           >
             <img src={iconPrev} alt="" />
           </button>
@@ -63,6 +64,7 @@ const Product = () => {
             className={`${
               isCartOpen || isSidebarOpen ? 'btn-next' : 'btn-next zindex'
             }`}
+            aria-label="next image"
           >
             <img src={iconNext} alt="" />
           </button>
@@ -107,11 +109,19 @@ const Product = () => {
         </div>
         <div className="product__add-to-cart">
           <div className="product__quantity btn">
-            <button onClick={decreaseCart} className="btn-decrease">
+            <button
+              onClick={decreaseCart}
+              className="btn-decrease"
+              aria-label="decrease quantity"
+            >
               <img src={iconMinus} alt="" />
             </button>
             <span className="quantity">{tempState}</span>
-            <button onClick={increaseCart} className="btn-increase">
+            <button
+              onClick={increaseCart}
+              className="btn-increase"
+              aria-label="increase quantity"
+            >
               <img src={iconPlus} alt="" />
             </button>
           </div>

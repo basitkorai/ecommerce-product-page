@@ -24,8 +24,12 @@ const Lightbox = () => {
         className={
           lightbox ? 'product__lightbox show-lightbox' : 'product__lightbox'
         }
+        id="lightbox"
+        aria-describedby="lightbox__header"
       >
-        <div className="lightbox__header sr-only">Product Photo Gallery</div>
+        <div className="lightbox__header sr-only" id="lightbox__header">
+          Product Photo Gallery
+        </div>
         <div className="lightbox__content">
           <div className="lightbox__body">
             <button
