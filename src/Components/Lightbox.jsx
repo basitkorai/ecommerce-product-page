@@ -49,16 +49,33 @@ const Lightbox = () => {
                 onClick={prevImage}
                 className="btn-prev"
               >
-                <img src={iconPrev} alt="" aria-hidden="true" />
+                <img
+                  src={iconPrev}
+                  alt=""
+                  aria-hidden="true"
+                  width="12"
+                  height="18"
+                />
               </button>
-              <img src={images[index]} alt="sneakers" />
+              <img
+                src={images[index]}
+                alt="sneakers"
+                width="546"
+                height="546"
+              />
               <button
                 aria-label="next image"
                 tabIndex={lightbox ? 0 : -1}
                 onClick={nextImage}
                 className="btn-next"
               >
-                <img src={iconNext} alt="" aria-hidden="true" />
+                <img
+                  src={iconNext}
+                  alt=""
+                  aria-hidden="true"
+                  width="12"
+                  height="18"
+                />
               </button>
             </div>
             <ul className="product__thumbnails lightbox__items">
@@ -73,7 +90,7 @@ const Lightbox = () => {
                         setIndex(index)
                       }}
                     >
-                      <img src={thumbnail} alt="" />
+                      <img src={thumbnail} alt="" width="80" height="80" />
                     </button>
                   </li>
                 )

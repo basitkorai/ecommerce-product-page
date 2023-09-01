@@ -126,7 +126,14 @@ const Navbar = () => {
             </div>
           </FocusTrap>
           <button className="user-avatar" type="button" aria-label="my profile">
-            <img className="avatar" src={Avatar} alt="" aria-hidden="true" />
+            <img
+              className="avatar"
+              src={Avatar}
+              alt=""
+              aria-hidden="true"
+              width="38"
+              height="38"
+            />
           </button>
         </div>
       </div>
