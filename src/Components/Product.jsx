@@ -49,7 +49,7 @@ const Product = () => {
             }`}
             aria-label="previous image"
           >
-            <img src={iconPrev} alt="" width="13" height="18" />
+            <img src={iconPrev} alt="" />
           </button>
           <img
             src={images[index]}
@@ -58,8 +58,6 @@ const Product = () => {
             onClick={() => {
               setLightbox(true)
             }}
-            width="330"
-            height="330"
           />
           <button
             onClick={nextImage}
@@ -68,7 +66,7 @@ const Product = () => {
             }`}
             aria-label="next image"
           >
-            <img src={iconNext} alt="" width="13" height="18" />
+            <img src={iconNext} alt="" />
           </button>
         </div>
         <div className="">
@@ -83,13 +81,7 @@ const Product = () => {
                       setIndex(index)
                     }}
                   >
-                    <img
-                      className="thumbnail"
-                      src={thumbnail}
-                      alt=""
-                      width="90"
-                      height="90"
-                    />
+                    <img className="thumbnail" src={thumbnail} alt="" />
                   </button>
                 </li>
               )
