@@ -63,6 +63,7 @@ import avatar from './src/assets/images/avatar.jpg'
 ### Custom Features
 
 1. Automatic Dark Mode
+2. Sticky navbar on mobile
 
 ### Continued development
 
