@@ -13,10 +13,8 @@ const Navbar = () => {
     isSidebarOpen,
     setIsSidebarOpen,
     totalItems,
-    totalAmount,
     isCartOpen,
     setIsCartOpen,
-    removeCartItems,
   } = useGlobalContext()
 
   useEffect(() => {
@@ -75,7 +73,7 @@ const Navbar = () => {
               </svg>
             </a>
           </div>
-          <ul className={'nav nav-list'} id="nav-list">
+          <ul className="nav nav-list" id="nav-list">
             <li className="nav-item">
               <a tabIndex={isSidebarOpen ? -1 : 0} href="" className="nav-link">
                 Collections
@@ -126,7 +124,7 @@ const Navbar = () => {
                 {totalItems ? (
                   <span className="total-cart-items">{totalItems}</span>
                 ) : null}
-                <RiShoppingCartLine />
+                <RiShoppingCartLine className="cart-icon" />
               </button>
               <Cart toggle={toggleCart} />
             </div>
