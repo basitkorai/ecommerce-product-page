@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [I live here](https://ecommerce-fem.netlify.app)
-- Solution URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [I live here](https://basitsecommerce.vercel.app/)
+- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/responsive-ecommerce-product-page-built-with-reactjs-TsJTQ1Xfyf)
 
 ## My process
 
